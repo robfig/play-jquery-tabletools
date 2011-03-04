@@ -1,0 +1,28 @@
+h1. jQuery DataTables TableTools Play! Module
+
+This module makes it easy to include jQuery DataTables TableTools resources in your Play! project.
+
+To use TableTools on your (existing) jQuery datatable:
+
+# Include this module by adding the following line to application.conf:
+<pre>module.jquery-tabletools=${play.path}/modules/jquery-tabletools</pre>
+
+# Add routes to your conf/routes file:
+<pre>GET     ${ctx}/jquery-tabletools                      module:jquery-tabletools</pre>
+
+# Include this script tag in your page:
+<pre><script src="@{'/public/js/TableTools.min.js'}" type="text/javascript" charset="utf-8"></script></pre>
+
+# Include this style in your page:
+<pre><link rel="stylesheet" type="text/css" href="@{'/public/css/TableTools.css'}">
+<link rel="stylesheet" type="text/css" href="@{'/public/css/TableTools_JUI.css'}"></pre>
+
+# Include the TableTools using 'T' in the 'sDom' setting (link?), and set the path to the swf.
+<pre>  $('#datatable').dataTable({
+    ...
+    "sDom": '<"H"lT>rt<"F"ip>',
+    "oTableTools": {
+      "sSwfPath": "@{'/public/swf/copy_cvs_xls_pdf.swf'}"
+    },
+  });</pre>
+
