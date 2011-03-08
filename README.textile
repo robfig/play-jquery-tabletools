@@ -1,23 +1,27 @@
 h1. jQuery DataTables TableTools Play! Module
 
-This module makes it easy to include jQuery DataTables TableTools resources in your Play! project.
+This module makes it easy to include "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools/ resources in your Play! project.  Note that this is only useful if you have existing "DataTables":http://www.datatables.net/ for which you wish to provide data export functionality.
 
 To use TableTools on your (existing) jQuery datatable:
 
-# Include this module by adding the following line to application.conf:
-<pre><code>module.jquery-tabletools=${play.path}/modules/jquery-tabletools</code></pre>
+* Install this module.
+<pre><code>$ play install jquerytabletools
+</code></pre>
 
-# Add routes to your conf/routes file:
-<pre><code>GET     ${ctx}/jquery-tabletools                      module:jquery-tabletools</code></pre>
+* Include this module by adding it to your application.conf:
+<pre><code>module.jquery-tabletools=${play.path}/modules/jquery-tabletools
+</code></pre>
 
-# Include this script tag in your page:
-<pre><code><script src="@{'/public/js/TableTools.min.js'}" type="text/javascript" charset="utf-8"></script></code></pre>
+* Add routes to your conf/routes file:
+<pre><code>GET     ${ctx}/jquery-tabletools                      module:jquery-tabletools
+</code></pre>
 
-# Include this style in your page:
-<pre><code><link rel="stylesheet" type="text/css" href="@{'/public/css/TableTools.css'}">
+* Include the javascript and css in your page:
+<pre><code><script src="@{'/public/js/TableTools.min.js'}" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="@{'/public/css/TableTools.css'}">
 <link rel="stylesheet" type="text/css" href="@{'/public/css/TableTools_JUI.css'}"></code></pre>
 
-# Include the TableTools using 'T' in the "'sDom' setting":http://www.datatables.net/usage/options#sDom, and set the path to the swf.
+* Include the TableTools using 'T' in the "'sDom' setting":http://www.datatables.net/usage/options#sDom, and set the path to the swf.
 <pre><code>  $('#datatable').dataTable({
     ...
     "sDom": '<"H"lT>rt<"F"ip>',
@@ -26,3 +30,4 @@ To use TableTools on your (existing) jQuery datatable:
     },
   });</code></pre>
 
+That's it!
