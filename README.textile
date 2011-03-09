@@ -16,7 +16,7 @@ bq. "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools i
 
 h2. Objective
 
-This module makes it easy to include "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools/ resources in your Play! project.
+This module makes it easy to add "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools/ to your Play! project.
 
 h2. Quick start
 
