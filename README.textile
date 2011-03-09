@@ -14,6 +14,10 @@ jQuery DataTables TableTools
 
 bq. "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools is an extra package can export the DataTable via Clipboard, CSV, Excel, PDF, and Print.
 
+Play!
+
+bq. "Play!":http://www.playframework.org" is an *incredible* web framework for Java.  
+
 h2. Objective
 
 This module makes it easy to add "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools/ to your Play! project.
@@ -22,12 +26,12 @@ h2. Quick start
 
 To use TableTools on your (existing) jQuery datatable:
 
-* Install this module.
-<pre><code>$ play install jquerytabletools
+* Download this module.
+<pre><code>$ git clone git://github.com/robfig/play-jquery-tabletools.git
 </code></pre>
 
-* Include this module by adding it to your application.conf:
-<pre><code>module.jquery-tabletools=${play.path}/modules/jquery-tabletools
+* Include this module by adding it to your application.conf (replace PATH_TO with the absolute or relative path to this module):
+<pre><code>module.jquery-tabletools=PATH_TO/play-jquery-tabletools
 </code></pre>
 
 * Add routes to your conf/routes file:
