@@ -1,6 +1,24 @@
 h1. jQuery DataTables TableTools Play! Module
 
-This module makes it easy to include "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools/ resources in your Play! project.  Note that this is only useful if you have existing "DataTables":http://www.datatables.net/ for which you wish to provide data export functionality.
+h2. Background
+
+jQuery
+
+bq. "jQuery":http://www.jquery.com is a popular javascript toolkit.
+
+jQuery DataTables
+
+bq. "jQuery DataTables":http://www.datatables.net is a plugin for jQuery that makes it easy to provide ajax sorting, searching, and pagination on your tabular data.
+
+jQuery DataTables TableTools
+
+bq. "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools is an extra package can export the DataTable via Clipboard, CSV, Excel, PDF, and Print.
+
+h2. Objective
+
+This module makes it easy to include "jQuery DataTables TableTools":http://www.datatables.net/extras/tabletools/ resources in your Play! project.
+
+h2. Quick start
 
 To use TableTools on your (existing) jQuery datatable:
 
