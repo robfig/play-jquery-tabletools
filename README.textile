@@ -34,10 +34,6 @@ To use TableTools on your (existing) jQuery datatable:
 <pre><code>module.jquery-tabletools=PATH_TO/play-jquery-tabletools
 </code></pre>
 
-* Add routes to your conf/routes file:
-<pre><code>GET     ${ctx}/jquery-tabletools                      module:jquery-tabletools
-</code></pre>
-
 * Include the javascript and css in your page:
 <pre><code><script src="@{'/public/js/TableTools.min.js'}" type="text/javascript" charset="utf-8"></script>
 <link rel="stylesheet" type="text/css" href="@{'/public/css/TableTools.css'}">
@@ -53,3 +49,5 @@ To use TableTools on your (existing) jQuery datatable:
   });</code></pre>
 
 That's it!
+
+Note: you should have a route to staticDir:public in your conf/routes
